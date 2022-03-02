@@ -1,5 +1,6 @@
 The MIT License (MIT)
 
+Copyright (c) Nils Adermann, Jordi Boggiano
 Copyright (c) soyhuce <bastien.philippe@soyhuce.fr>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

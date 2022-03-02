@@ -12,7 +12,7 @@ return (new PhpCsFixer\Config())->setRules([
     'array_push' => false, // risky
     'backtick_to_shell_exec' => true,
     'ereg_to_preg' => true, // risky
-    'mb_str_functions' => true, // risky
+    'mb_str_functions' => false, // risky
     'no_alias_functions' => ['sets' => ['@all']], // risky
     'no_alias_language_construct_call' => true,
     'no_mixed_echo_print' => ['use' => 'echo'],

@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "php": "^8.0"
+        "php": "^8.0",
+        "symfony/finder": "^5.4 || ^6.0"
     },
     "require-dev": {
         "composer/composer": "^2.2",
@@ -36,7 +37,7 @@
     "scripts": {
         "cs": "vendor/bin/php-cs-fixer fix",
         "test": "vendor/bin/pest",
-        "test-coverage": "vendor/bin/pest --coverage",
+        "test-coverage": "XDEBUG_MODE=coverage vendor/bin/pest --coverage",
         "analyse": "./vendor/bin/phpstan analyse",
         "all": [
             "@cs",
