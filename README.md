@@ -7,7 +7,7 @@
 Generates classmap without composer.
 
 ```php
-\Soyhuce\ClassmapGenerator\ClassMapGenerator::createMap(__DIR__ . '/src'); 
+\Soyhuce\ClassMapGenerator\ClassMapGenerator::createMap(__DIR__ . '/src'); 
 // [
 //   'Soyhuce\\ClassmapGenerator\\ClassmapGenerator' => '/code/soyhuce/classmap-generator/src/ClassmapGenerator.php',
 //   'Soyhuce\\ClassmapGenerator\\PhpFileCleaner' => '/code/soyhuce/classmap-generator/src/PhpFileCleaner.php',
@@ -30,7 +30,7 @@ composer require soyhuce/classmap-generator
 ## Usage
 
 ```php
-\Soyhuce\ClassmapGenerator\ClassMapGenerator::createMap($path); 
+\Soyhuce\ClassMapGenerator\ClassMapGenerator::createMap($path); 
 ```
 
 It will generate the classmap for the given path.

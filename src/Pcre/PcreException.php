@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Soyhuce\ClassmapGenerator\Pcre;
+namespace Soyhuce\ClassMapGenerator\Pcre;
 
 use RuntimeException;
 use function function_exists;

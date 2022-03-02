@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Soyhuce\ClassmapGenerator\Util;
+namespace Soyhuce\ClassMapGenerator\Util;
 
-use Soyhuce\ClassmapGenerator\Pcre\Preg;
+use Soyhuce\ClassMapGenerator\Pcre\Preg;
 use function count;
 use function strlen;
 

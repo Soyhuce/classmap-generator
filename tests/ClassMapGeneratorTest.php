@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use Composer\Autoload\ClassMapGenerator as ComposerClassMapGenerator;
-use Soyhuce\ClassmapGenerator\ClassMapGenerator;
+use Soyhuce\ClassMapGenerator\ClassMapGenerator;
 
 it('Generates same class map than Composer', function (string $directory): void {
     expect(ClassMapGenerator::createMap($directory))

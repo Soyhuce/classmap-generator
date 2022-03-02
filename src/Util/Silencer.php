@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Soyhuce\ClassmapGenerator\Util;
+namespace Soyhuce\ClassMapGenerator\Util;
 
 use Exception;
 

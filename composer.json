@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Soyhuce\\ClassmapGenerator\\": "src"
+            "Soyhuce\\ClassMapGenerator\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Soyhuce\\ClassmapGenerator\\Tests\\": "tests"
+            "Soyhuce\\ClassMapGenerator\\Tests\\": "tests"
         }
     },
     "scripts": {

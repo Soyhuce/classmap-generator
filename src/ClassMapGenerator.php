@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Soyhuce\ClassmapGenerator;
+namespace Soyhuce\ClassMapGenerator;
 
 use RuntimeException;
-use Soyhuce\ClassmapGenerator\Pcre\Preg;
-use Soyhuce\ClassmapGenerator\Util\Filesystem;
-use Soyhuce\ClassmapGenerator\Util\Platform;
+use Soyhuce\ClassMapGenerator\Pcre\Preg;
+use Soyhuce\ClassMapGenerator\Util\Filesystem;
+use Soyhuce\ClassMapGenerator\Util\Platform;
 use SplFileInfo;
 use Symfony\Component\Finder\Finder;
 use function count;
