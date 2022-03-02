@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 use Composer\Autoload\ClassMapGenerator as ComposerClassMapGenerator;
-use Soyhuce\ClassmapGenerator\ClassmapGenerator;
+use Soyhuce\ClassmapGenerator\ClassMapGenerator;
 
-it('Generates same classmap than Composer', function (string $directory): void {
-    expect(ClassmapGenerator::createMap($directory))
+it('Generates same class map than Composer', function (string $directory): void {
+    expect(ClassMapGenerator::createMap($directory))
         ->toBe(ComposerClassMapGenerator::createMap($directory));
 })->with([
     __DIR__ . '/../src',

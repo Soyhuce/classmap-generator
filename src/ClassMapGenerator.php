@@ -14,7 +14,7 @@ use function count;
 use function defined;
 use function in_array;
 
-class ClassmapGenerator
+class ClassMapGenerator
 {
     /**
      * @throws RuntimeException When the path is neither an existing file nor directory
