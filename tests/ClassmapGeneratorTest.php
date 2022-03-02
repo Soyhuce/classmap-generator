@@ -11,6 +11,5 @@ it('Generates same classmap than Composer', function (string $directory): void {
 })->with([
     __DIR__ . '/../src',
     __DIR__ . '/../src/*',
-    __DIR__ . '/../vendor'
+    __DIR__ . '/../vendor',
 ]);
-
