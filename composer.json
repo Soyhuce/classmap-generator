@@ -1,16 +1,16 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "soyhuce/classmap-generator",
+    "description": "A simple classmap generator extracted from composer",
     "keywords": [
-        ":vendor_name",
-        ":package_slug"
+        "soyhuce",
+        "classmap-generator"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/soyhuce/classmap-generator",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Bastien Philippe",
+            "email": "bastien.philippe@soyhuce.fr",
             "role": "Developer"
         }
     ],
@@ -18,27 +18,37 @@
         "php": "^8.0"
     },
     "require-dev": {
+        "composer/composer": "^2.2",
         "friendsofphp/php-cs-fixer": "^3.0",
         "pestphp/pest": "^1.20",
-        "spatie/ray": "^1.28"
+        "phpstan/phpstan": "^1.4"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src"
+            "Soyhuce\\ClassmapGenerator\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Soyhuce\\ClassmapGenerator\\Tests\\": "tests"
         }
     },
     "scripts": {
+        "cs": "vendor/bin/php-cs-fixer fix",
         "test": "vendor/bin/pest",
         "test-coverage": "vendor/bin/pest --coverage",
-        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+        "analyse": "./vendor/bin/phpstan analyse",
+        "all": [
+            "@cs",
+            "@test",
+            "@analyse"
+        ]
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true

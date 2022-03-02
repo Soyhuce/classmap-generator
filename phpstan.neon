@@ -1,0 +1,11 @@
+parameters:
+
+  paths:
+    - src
+
+  level: max
+
+  ignoreErrors: [ ]
+
+  checkMissingIterableValueType: true
+  checkGenericClassInNonGenericObjectType: true
