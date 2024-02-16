@@ -11,6 +11,7 @@ class Preg
     /**
      * @param non-empty-string $pattern
      * @param array<string|null> $matches Set by method
+     * @param int-mask<PREG_OFFSET_CAPTURE, PREG_UNMATCHED_AS_NULL> $flags
      * @return 0|1
      */
     public static function match(string $pattern, string $subject, ?array &$matches = null, int $flags = 0, int $offset = 0): int
@@ -79,6 +80,7 @@ class Preg
     /**
      * @param non-empty-string $pattern
      * @param array<string|null> $matches Set by method
+     * @param int-mask<PREG_OFFSET_CAPTURE, PREG_UNMATCHED_AS_NULL> $flags
      */
     public static function isMatch(string $pattern, string $subject, ?array &$matches = null, int $flags = 0, int $offset = 0): bool
     {
