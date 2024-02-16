@@ -11,7 +11,7 @@ jobs:
         os: [ubuntu-latest, windows-latest]
         php: [8.2, 8.3]
         stability: [prefer-lowest, prefer-stable]
-        symfony: [^6.0, ^7.0]
+        symfony: [^6.2.7, ^7.0]
 
     name: P${{ matrix.php }} - ${{ matrix.stability }} - ${{ matrix.os }}
 
