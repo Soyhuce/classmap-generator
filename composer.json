@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "symfony/finder": "^6.0||^7.0"
+        "symfony/finder": "^6.2.7||^7.0"
     },
     "require-dev": {
         "composer/composer": "^2.2",
