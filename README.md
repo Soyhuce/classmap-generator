@@ -19,6 +19,9 @@ Generates classmap without composer.
 // ]
 ```
 
+> This package is abandoned. We recommend using composer/class-map-generator in replacement
+
+
 ## Installation
 
 You can install the package via composer:
