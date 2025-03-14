@@ -13,6 +13,7 @@ use Symfony\Component\Finder\Finder;
 use function count;
 use function defined;
 use function in_array;
+use function sprintf;
 
 class ClassMapGenerator
 {
